@@ -1,0 +1,278 @@
+h1,
+h2,
+h4 {
+    color: #FDE9FF;
+    /* font-family: 'Source Sans 3', sans-serif; */
+}
+
+.navbar {
+    padding-bottom: 4.5rem !important;
+}
+
+.navbar-toggler {
+    border-color: #FDE9FF;
+    border-width: 2px;
+    color: #FDE9FF;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 233, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+    color: #FDE9FF;
+    font-size: 2.5rem !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #63BAAB;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* font-family: 'Source Sans 3', sans-serif; */
+    color: #FDE9FF;
+}
+
+.nav-link:hover {
+    color: #63BAAB;
+}
+
+.container-fluid {
+    padding: 1% 10% 7%;
+    background-color: #6506D6;
+}
+
+.centered-contianer {
+    padding-top: 8%;
+    /* padding-left: 6%; */
+}
+
+#join-us h1 {
+    color: #6506D6;
+    font-weight: bolder;
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
+}
+
+#join-us h3 {
+    color: #8F76A7;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+#join-us {
+    background-color: #FFD9D9;
+    margin: 5% 10% 7%;
+    padding: 60px;
+}
+ 
+.btn-primary {
+    border-radius: 0px;
+    background-color: #6506D6;
+    border-color: #6506D6;
+    color: #FFD9D9;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #63BAAB;
+    border-color: #63BAAB;
+    color: #FDE9FF
+}
+
+.btn-primary:focus{
+    background-color: #63BAAB;
+    border-color: #63BAAB;
+    color: #FDE9FF
+}
+
+.btn-primary:active{
+    background-color: #63BAAB;
+    border-color: #63BAAB;
+    color: #FDE9FF
+}
+
+#about-us h1 {
+    color: #6506D6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#about-us p {
+    color: #8F76A7;
+    font-weight: bold;
+    /* margin-top: 5%; */
+    /* margin-bottom: 10%; */
+}
+
+#about-us {
+    margin: 7% 6% 7%;
+    padding: 60px;
+}
+
+#our-activities h1 {
+    color: #6506D6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#our-activities p {
+    color: #8F76A7;
+    font-weight: bold;
+}
+
+#our-activities {
+    margin: 7% 3% 6% 3%;
+    padding: 60px;
+}
+
+.avtivity {
+    margin-bottom: 8%;
+    margin-left: 5%;   
+}
+
+#our-magazine h1 {
+    color: #FDE9FF;
+    font-weight: bolder;
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
+}
+
+#our-magazine h2 {
+    color: #6506D6;
+    font-weight: bolder;
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
+}
+
+#our-magazine h3 {
+    color: #FFD9D9;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+#our-magazine {
+    margin: 5% 6% 7%;
+    padding: 60px;
+
+}
+
+#our-magazine p {
+    color: #FDE9FF;
+    font-weight: bold;
+}
+
+#our-magazine .first-col {
+    background-color: #6506D6;
+    padding: 6%;
+}
+
+#our-magazine .second-col {
+    background-color: #FFD9D9;
+}
+
+#mag-button {
+    background-color: #63BAAB;
+    color: #FDE9FF;
+}
+
+#our-magazine .magazine-img {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+footer {
+    background-color: #6506D6;
+    padding: 6%
+}
+
+footer h3 {
+    color: #FDE9FF;
+}
+
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-header {
+    animation: headerAnimation 1s ease-out;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(35px); /* Adjust the value as desired */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.image-container {
+    display: inline-block; /* Ensure the container wraps around the image */
+    overflow: hidden; /* Hide overflowing parts of the image */
+}
+
+.moving-image {
+    animation: moveImage 3s infinite linear; /* Adjust the duration as needed */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1); /* Adjust the scale value for the zoom effect */
+    }
+}
+
+.initial-zoom {
+    transform: scale(0.8); /* Set the initial scale */
+    transition: transform 0.5s ease-in-out; /* Add smooth transition effect */
+}
+
+.zoomed {
+    animation: zoomIn 2s ease-in-out; /* Adjust the animation duration as needed */
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #our-magazine .container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: none; /* Disable initial animation */
+  }
+  
+  #our-magazine .container.animate {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  
+  
+  
